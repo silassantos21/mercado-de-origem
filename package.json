@@ -1,0 +1,38 @@
+{
+  "name": "mercado-de-origem-redesign",
+  "version": "1.0.0",
+  "description": "Redesign completo do site institucional do Mercado de Origem, um centro cultural gastronômico que reúne feira de produtos artesanais, espaços de lazer e eventos temáticos. O novo site terá visual moderno, imersivo e alinhado à identidade rústico-natural da marca, inspirado na qualidade de experiência do Espaço 356. O objetivo é converter visitantes em clientes e lojistas interessados em locar espaços.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.42.0",
+    "lucide-react": "^1.21.0",
+    "next": "^14.2.35",
+    "postcss": "^8.5.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

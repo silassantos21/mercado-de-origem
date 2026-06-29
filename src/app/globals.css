@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Taverna Aberta — Verde + Marrom */
+  --color-verde-floresta: #1A3A0F;
+  --color-verde-musgo: #2D5A1B;
+  --color-verde-sage: #5C8A42;
+  --color-verde-claro: #A3C98A;
+  --color-marrom-escuro: #3C1A08;
+  --color-marrom-madeira: #6B3010;
+  --color-marrom-terra: #8B4A20;
+  --color-caramelo: #C4783A;
+  --color-dourado: #D4A84B;
+  --color-bege: #F2E8D5;
+  --color-creme: #FAF6ED;
+  --color-branco-quente: #FFFEF9;
+
+  /* Tipografia */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Sombras */
+  --shadow-card: 0 4px 24px rgba(26, 58, 15, 0.10);
+  --shadow-hover: 0 8px 40px rgba(26, 58, 15, 0.18);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-creme);
+    color: var(--color-marrom-escuro);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Remove fundo branco de logos PNG via blend mode */
+  .logo-sem-fundo {
+    mix-blend-mode: multiply;
+  }
+
+  /* Fade nas bordas do marquee */
+  .marquee-fade {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+}
